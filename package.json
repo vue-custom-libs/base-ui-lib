@@ -1,0 +1,43 @@
+{
+  "name": "@a1danw/ui-lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a1danw/comp_base"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@a1danw"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-lib.umd.cjs",
+  "module": "./dist/ui-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-lib.js",
+      "require": "./dist/ui-lib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "version": "1.4.1",
+  "scripts": {
+    "dev": "vite build",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.5.5",
+    "vite-plugin-css-injected-by-js": "^3.4.0",
+    "vite-svg-loader": "^5.1.0",
+    "vue": "^3.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "sass": "^1.70.0",
+    "vite": "^5.0.8"
+  }
+}
